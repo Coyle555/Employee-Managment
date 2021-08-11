@@ -37,7 +37,6 @@ const db = mysql.createConnection(
 
 
 app.get('/api/departments', (req, res) => {
-    console.log('1.1');
     const sql = `SELECT * FROM departments`;
     
     db.query(sql, (err, rows) => {
@@ -52,7 +51,6 @@ app.get('/api/departments', (req, res) => {
     });
 });
 app.get('/api/employees', (req, res) => {
-    console.log('1.1');
     const sql = `SELECT * FROM employees`;
     
     db.query(sql, (err, rows) => {
@@ -67,7 +65,6 @@ app.get('/api/employees', (req, res) => {
     });
 });
 app.get('/api/roles', (req, res) => {
-    console.log('1.1');
     const sql = `SELECT * FROM roles`;
     
     db.query(sql, (err, rows) => {
